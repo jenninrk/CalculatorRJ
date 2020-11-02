@@ -8,6 +8,11 @@ def square_root(a):
     return c
 
 
+def subtraction(a, b):
+    c = a - b
+    return c
+
+
 class Calculator:
     result = 0
 
@@ -21,3 +26,10 @@ class Calculator:
     def sqrt(self, a):
         self.result = square_root(a)
         return self.result
+
+    def subtract(self, a, b):
+        self.result = subtraction(a, b)
+        return self.result
+
+
+

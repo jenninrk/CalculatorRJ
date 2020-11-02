@@ -20,6 +20,10 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertEqual(calculator.sqrt(25), 5)
 
+    def test_subtraction(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.subtract(3, 2), 1)
+
 
 if __name__ == '__main__':
     unittest.main()
