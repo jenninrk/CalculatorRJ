@@ -3,6 +3,11 @@ def addition(a, b):
     return c
 
 
+def square_root(a):
+    c = a ** (1 / 2)
+    return c
+
+
 class Calculator:
     result = 0
 
@@ -11,4 +16,8 @@ class Calculator:
 
     def add(self, a, b):
         self.result = addition(a, b)
+        return self.result
+
+    def sqrt(self, a):
+        self.result = square_root(a)
         return self.result
