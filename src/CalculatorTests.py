@@ -28,6 +28,10 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertEqual(calculator.multiply(4, 2), 8)
 
+    def test_division(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.divide(6, 2), 3)
+
 
 if __name__ == '__main__':
     unittest.main()
