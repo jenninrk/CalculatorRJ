@@ -23,6 +23,11 @@ def division(a, b):
     return c
 
 
+def squared(a):
+    c = a ** 2
+    return c
+
+
 class Calculator:
     result = 0
 
@@ -49,5 +54,6 @@ class Calculator:
         self.result = division(a, b)
         return self.result
 
-
-
+    def square(self, a, b):
+        self.result = squared(a)
+        return self.result
